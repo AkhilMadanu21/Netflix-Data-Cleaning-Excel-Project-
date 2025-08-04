@@ -1,23 +1,49 @@
-# Netflix-Data-Cleaning-Excel-Project-
+# Netflix Data Cleaning Project (Excel + Power Query)
+
 This project involves cleaning and preprocessing the Netflix Movies and TV Shows dataset using Microsoft Excel.
 
-## 🧹 Cleaning Tasks Performed
 
-- Removed duplicate records
-- Handled missing values (`country`, `rating`, `cast`)
-- Converted `date_added` column to proper date format (dd-mm-yyyy)
-- Standardized text formatting (e.g., PG-13, TV-MA)
-- Split `duration` into `duration_value` and `duration_unit`
-- Renamed columns for consistency
 
-## 📁 Dataset
+## 📌 Objective:
+To clean and preprocess the raw Netflix Movies and TV Shows dataset using **Excel Power Query**.
 
-The cleaned dataset is available here: `https://github.com/AkhilMadanu21/Netflix-Data-Cleaning-Excel-Project-/blob/main/netflix_titles(cleaned).xlsx`
+## 🛠️ Tools Used:
+- Excel (Power Query)
+- Basic Excel formulas (for formatting, date handling)
 
-## 🔧 Tools Used
+## 🧹 Cleaning Steps Performed:
+1. **Handled Missing Values**:
+   - Used filters and Power Query to detect and replace blanks.
+   - Filled or removed rows with empty critical data.
 
-- Microsoft Excel
+2. **Removed Duplicates**:
+   - Checked across all columns A–L using `COUNTIF()` and Excel filters.
 
-## 📌 Outcome
+3. **Standardized Formatting**:
+   - Trimmed text, fixed inconsistent casing (e.g., Title Case).
+   - Removed extra spaces in all text columns.
 
-A clean, structured dataset ready for further analysis or visualization in Excel/Power BI.
+4. **Converted Date Formats**:
+   - Transformed `date_added` into proper `dd-mm-yyyy` format.
+
+5. **Renamed Column Headers**:
+   - Made all column names lowercase and removed extra spaces.
+
+6. **Split Duration Column**:
+   - Used `Text to Columns` to separate numeric and unit values from the `duration` column.
+
+7. **Cleaned Rating Column**:
+   - Ensured consistency across all rating types (e.g., TV-MA, PG-13).
+
+## 📂 Files Included:
+- `netflix_titles_cleaned.xlsx`: Cleaned dataset (final version)
+
+
+## 📌 Outcome:
+Created a clean and consistent dataset ready for further analysis or visualization.
+
+---
+
+## 💡 Bonus:
+Want to explore this data further? Try building a Power BI dashboard based on content type, release year, or countries!
+
